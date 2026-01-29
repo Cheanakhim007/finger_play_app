@@ -199,7 +199,7 @@ class _ChooserScreenState extends State<ChooserScreen> with TickerProviderStateM
               setState(() {});
             },
             behavior: HitTestBehavior.opaque,
-            child: SizedBox.expand(),
+            child: const SizedBox.expand(),
           ),
 
           // Number of winners chooser (top center - Image 2/3)
@@ -280,7 +280,7 @@ class _ChooserScreenState extends State<ChooserScreen> with TickerProviderStateM
                 child: ElevatedButton(
                   onPressed: _reset,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orange,
+                    // backgroundColor: Colors.orange,
                     padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 16),
                   ),
                   child: const Text("Play Again", style: TextStyle(fontSize: 20)),
